@@ -26,9 +26,9 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
-    # - name: prospector-zmk-module
-    #   remote: prospector
-    #   revision: v2.0.0
-    #   path: modules/prospector-zmk-module
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.0.0
+      path: modules/prospector-zmk-module
   self:
     path: config
