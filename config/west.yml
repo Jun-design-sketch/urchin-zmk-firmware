@@ -12,9 +12,6 @@ manifest:
       # nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
-      # prospector-scanner
-    - name: prospector
-      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,9 +23,5 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v2.0.0
-      path: modules/prospector-zmk-module
   self:
     path: config
