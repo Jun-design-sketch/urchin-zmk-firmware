@@ -193,9 +193,9 @@
         left_mouse {
             bindings = <
 &trans  &trans     &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp LCLK  &msc SCRL_UP    &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &msc SCRL_DOWN  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans     &trans  &trans  &trans
+&trans  &mkp LCLK  &msc SCRL_UP    &mkp RCLK  &trans  &msc SCRL_DOWN  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)  &mmv MOVE_Y(-4000)  &mmv MOVE_X(4000)
+&trans  &trans     &msc SCRL_DOWN  &trans     &trans  &msc SCRL_UP    &msc MOVE_X(-25)    &msc MOVE_Y(-25)    &msc MOVE_Y(25)    &msc MOVE_X(25)
+                                   &trans     &trans  &mkp RCLK  &mkp MCLK
             >;
         };
 
