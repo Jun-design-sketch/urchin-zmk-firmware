@@ -85,21 +85,17 @@
         };
 
         // both left thumb keys
-
-        to_bootloader {
-            timeout-ms = <200>;
-            key-positions = <31 32>;
-            bindings = <&mo 8>;
-        };
-
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
 
-        combo_ctrl_space {
-            timeout-ms = <200>;
-            key-positions = <12 13>;
-            bindings = <&kp LC(SPACE)>;
-            layers = <0>;
+        combo_number {
+            bindings = <&tog 5>;
+            key-positions = <11 13 12>;
+        };
+
+        combo_mouse {
+            bindings = <&tog 3>;
+            key-positions = <1 2 3>;
         };
     };
 
@@ -135,10 +131,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none         &none         &none             &none           &none  &kp K_REDO    &kp K_PASTE    &kp K_COPY  &kp K_CUT     &kp K_UNDO
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp UP_ARROW  &kp RIGHT_ARROW
-&none         &none         &none             &none           &none  &kp INS       &kp HOME       &kp PG_DN   &kp PG_UP     &kp END
-                                              &none           &none  &kp ENTER     &kp BACKSPACE
+&none         &none         &none             &none           &none  &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)  &kp LG(X)     &kp LG(Z)
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &kp CAPSLOCK   &kp LEFT       &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW
+&none         &none         &none             &none           &none  &kp INS        &kp HOME       &kp PG_DN  &kp PG_UP     &kp END
+                                              &none           &none  &kp ENTER      &kp BACKSPACE
             >;
         };
 
@@ -147,10 +143,10 @@
         mouse_layer {
             label = "Mou";
             bindings = <
-&none         &none         &none             &none           &none  &none      &none           &none           &none         &none
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none         &none         &none             &none           &none  &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-                                              &none           &none  &mkp RCLK  &mkp LCLK
+&none         &none         &none             &none           &mo 7      &kp LG(LS(Z))  &kp LG(V)       &kp RG(C)       &kp LG(X)     &kp LG(Z)
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mkp LCLK  &mkp LCLK      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none         &none         &none             &none           &mkp RCLK  &mkp RCLK      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+                                              &none           &none      &mkp RCLK      &mkp LCLK
             >;
         };
 
@@ -192,10 +188,10 @@
 
         left_mouse {
             bindings = <
-&trans  &trans     &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp LCLK  &msc SCRL_UP    &mkp RCLK  &trans  &msc SCRL_DOWN  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)  &mmv MOVE_Y(-4000)  &mmv MOVE_X(4000)
-&trans  &trans     &msc SCRL_DOWN  &trans     &trans  &msc SCRL_UP    &msc MOVE_X(-25)    &msc MOVE_Y(-25)    &msc MOVE_Y(25)    &msc MOVE_X(25)
-                                   &trans     &trans  &mkp RCLK  &mkp MCLK
+&trans  &trans     &trans          &trans     &trans          &kp LS(LG(Z))   &kp LG(V)           &kp LG(C)          &kp LG(X)           &kp LG(Z)
+&trans  &mkp LCLK  &msc SCRL_UP    &mkp RCLK  &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)  &mmv MOVE_Y(-4000)  &mmv MOVE_X(4000)
+&trans  &trans     &msc SCRL_DOWN  &trans     &msc SCRL_UP    &msc SCRL_UP    &msc MOVE_X(-25)    &msc MOVE_Y(-25)   &msc MOVE_Y(25)     &msc MOVE_X(25)
+                                   &trans     &trans          &mkp RCLK       &mkp LCLK
             >;
         };
 
