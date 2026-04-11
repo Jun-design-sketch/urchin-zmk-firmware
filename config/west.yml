@@ -12,8 +12,8 @@ manifest:
       # nice-view-gem
     # - name: m165437
     #   url-base: https://github.com/M165437
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: Jun-design-sketch
+      url-base: https://github.com/Jun-design-sketch
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,7 +26,7 @@ manifest:
     #   remote: m165437
     #   revision: v0.3.0
     - name: urchin-peripheral-animation
-      remote: gpeye
+      remote: Jun-design-sketch
       revision: main
   self:
     path: config
