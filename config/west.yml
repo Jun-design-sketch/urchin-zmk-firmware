@@ -10,8 +10,10 @@ manifest:
     - name: duckyb
       url-base: https://github.com/duckyb
       # nice-view-gem
-    - name: m165437
-      url-base: https://github.com/M165437
+    # - name: m165437
+    #   url-base: https://github.com/M165437
+    - name: gpeye
+      url-base: https://github.com/GPeye
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,8 +22,11 @@ manifest:
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
-    - name: nice-view-gem
-      remote: m165437
-      revision: v0.3.0
+    # - name: nice-view-gem
+    #   remote: m165437
+    #   revision: v0.3.0
+    - name: urchin-peripheral-animation
+      remote: gpeye
+      revision: main
   self:
     path: config
