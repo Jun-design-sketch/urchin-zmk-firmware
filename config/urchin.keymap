@@ -71,20 +71,20 @@
     combos {
         compatible = "zmk,combos";
 
-        // both right thumb keys
-
-        to_media {
+        // The two left thumb keys act as Totem's middle left thumb key.
+        left_thumb_middle {
             timeout-ms = <200>;
-            key-positions = <31 30>;
-            bindings = <&lt 1 ESC>;
+            key-positions = <30 31>;
+            layers = <BASE>;
+            bindings = <&lt 2 SPACE>;
         };
 
-        // internal-left & external-right thumb keys
-
-        to_func {
+        // The two right thumb keys act as Totem's middle right thumb key.
+        right_thumb_middle {
             timeout-ms = <200>;
-            key-positions = <33 32>;
-            bindings = <&lt 6 DEL>;
+            key-positions = <32 33>;
+            layers = <BASE>;
+            bindings = <&lt 5 BACKSPACE>;
         };
 
         // both left thumb keys
@@ -131,7 +131,7 @@
 &kp Q           &kp W           &kp E               &kp R             &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT
 &lt 7 Z         &kp X           &kp C               &kp V             &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH
-                                                    &lt 2 SPACE       &lt 3 TAB  &lt 4 ENTER  &lt 5 BACKSPACE
+                                                    &lt 1 ESC         &lt 3 TAB  &lt 4 ENTER  &lt 6 DELETE
             >;
         };
 
